@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejemplo3.xsd">
+    <titulo>Ha fallecido Manolo el del bombo</titulo>
+    <parrafo>Gran hincha de la seleccion espannola</parrafo>
+    <grafico>Foto 1</grafico>
+    <parrafo>Asistia a todos los partidos con un bombo para animar a la seleccion</parrafo>
+    <grafico>Foto 2</grafico>
+
+</noticia>

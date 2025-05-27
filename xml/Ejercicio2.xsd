@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de universidad -->
+    <xs:element name="universidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estudiante" type="tipoEstudiante" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definición del tipo para "estudiante" -->
+    <xs:complexType name="tipoEstudiante">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="edad" type="xs:int" />
+            <xs:element name="carrera" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

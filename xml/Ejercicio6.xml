@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:doc="http://ejemplo.org/documento"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="http://ejemplo.org/documento Ejercicio6.xsd">
+    <doc:title>TITULO DEL DOCUMENTO</doc:title>
+    <doc:content>
+        <html:html>
+            <html:head>
+                <html:title>TITULO HTML</html:title>
+            </html:head>
+            <html:body>
+                <html:p>TEXTO DEL DOCUMENTO</html:p>
+            </html:body>
+        </html:html>
+    </doc:content>
+    <doc:author>Gabriel</doc:author>
+</doc:document>

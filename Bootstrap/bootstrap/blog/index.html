@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clash of Clans Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="coc-theme.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-custom py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center text-light">
+          <img
+            src="Clash_of_Clans_29.webp"
+            alt="Clash Logo"
+            width="50"
+            class="me-2"
+          />
+          <span class="fs-4 fw-bold">Clash of Clans Blog</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#strategies">Estrategias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#updates">Actualizaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#community">Comunidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-warning" href="#signup">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container text-center hero my-5">
+      <h1>¡Domina el campo de batalla!</h1>
+      <p>
+        Descubre los últimos consejos, trucos y actualizaciones para vencer a
+        tus enemigos en Clash of Clans.
+      </p>
+      <a href="#" class="btn btn-danger btn-lg">Únete a la batalla</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Strategy Card -->
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light shadow">
+            <img
+              src="Ataques,jpg.jpg"
+              class="card-img-top"
+              alt="Attack Strategies"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Estrategias de ataque perfectas</h5>
+              <p class="card-text">
+                Domina el arte del ataque con nuestras mejores estrategias para
+                cada nivel del Ayuntamiento.
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#strategyModal"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Updates Card -->
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light shadow">
+            <img src="News.webp" class="card-img-top" alt="Updates" />
+            <div class="card-body">
+              <h5 class="card-title">Ultimas actualizaciones</h5>
+              <p class="card-text">
+                Mantente informado sobre todos los nuevos cambios de balance,
+                las nuevas tropas y defensas en las últimas actualizaciones.
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#updatesModal"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Community Card -->
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light shadow">
+            <img src="Comunidad.jpg" class="card-img-top" alt="Community" />
+            <div class="card-body">
+              <h5 class="card-title">Eventos de la comunidad</h5>
+              <p class="card-text">
+                Únete a nuestra próspera comunidad y mantente informado de los
+                nuevos eventos.
+              </p>
+              <a
+                href="#"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#communityModal"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container text-center">
+        <p class="mb-0">
+          © 2025 Clash of Clans Blog. Todos los derechos reservados.
+        </p>
+        <a href="#" class="text-light">Volver arriba</a>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="strategyModal"
+      tabindex="-1"
+      aria-labelledby="strategyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="strategyModalLabel">
+              Caminata de la Reina
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              La caminata de la reina en Clash of Clans consiste en usar a la
+              Reina Arquera junto con 4-5 Sanadores para que limpie una zona del
+              mapa mientras se mantiene con vida. Se coloca en un punto
+              estratégico, lejos de defensas peligrosas, y se apoya con hechizos
+              y su habilidad. Sirve para eliminar defensas clave o crear embudo
+              antes del ataque principal.
+            </p>
+            <img
+              src="QueenWalk.jpg"
+              class="img-fluid rounded"
+              alt="Estrategia avanzada"
+            />
+          </div>
+
+          <!-- ✅ Mueve aquí el footer para que quede dentro del modal-content -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="updatesModal"
+      tabindex="-1"
+      aria-labelledby="updatesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updatesModalLabel">
+              Ultimas actualizaciones
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              ¡La nueva actualización trae un nuevo evento de cofres (puedes
+              conseguir hasta 4 al dia) y una nueva habilidad épica GRATIS la
+              "Flecha Helada"!
+            </p>
+            <img
+              src="NuevaActu.jpg"
+              class="img-fluid rounded"
+              alt="Nueva actualización"
+            />
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="communityModal"
+      tabindex="-1"
+      aria-labelledby="communityModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="communityModalLabel">
+              Eventos de la comunidad
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Mantente informado sobre los juegos del clan mensuales y las
+              mejores recompensas que puedes elegir. ¡No te lo pierdas!
+            </p>
+            <img
+              src="ClanRewards.png"
+              class="img-fluid rounded"
+              alt="Eventos de la comunidad"
+            />
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona xmlns="http://ejemplo.org/persona"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dir="http://ejemplo.org/direccion"
+    xsi:schemaLocation="http://ejemplo.org/persona Persona.xsd
+                        http://ejemplo.org/direccion Direccion.xsd">
+    <nombre>Juan</nombre>
+    <edad>30</edad>
+    <direccion>
+        <dir:calle>Gran Vía</dir:calle>
+        <dir:ciudad>Madrid</dir:ciudad>
+        <dir:codigoPostal>28013</dir:codigoPostal>
+    </direccion>
+</persona>

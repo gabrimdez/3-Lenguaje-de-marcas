@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Declaracion del elemento raiz catalog -->
+    <xs:element name="catalog" type="tipadoCatalog" />
+
+    <!-- Declaracion de tipo de dato para catalogo -->
+    <xs:complexType name="tipadoCatalog">
+        <xs:sequence>
+            <xs:element name="book" type="tipadoLibro" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipadoLibro">
+        <xs:sequence>
+            <xs:element name="title" type="tipoTitle" />
+            <xs:element name="author" type="tipoAutor" />
+            <xs:element name="year" type="tipoYear" />
+            <xs:element name="publisher" type="tipoPublisher" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Declaracion de tipo de dato para title -->
+
+    <xs:simpleType name="tipoTitle">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Declaracion de tipo de dato para autor -->
+
+    <xs:simpleType name="tipoAutor">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Declaracion de tipo de dato para year -->
+
+    <xs:simpleType name="tipoYear">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1900" />
+            <xs:maxInclusive value="2023" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Declaracion de tipo de dato para publisher -->
+
+    <xs:simpleType name="tipoPublisher">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de elementos globales -->
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="creador" type="xs:string" />
+    <xs:element name="anioDeCreacion" type="xs:int" />
+    <xs:element name="descripcion" type="xs:string" />
+
+    <!-- Definición del elemento Lenguajes -->
+    <xs:element name="lenguajes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="lenguaje" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nombre" />
+                            <xs:element ref="creador" />
+                            <xs:element ref="anioDeCreacion" />
+                            <xs:element ref="descripcion" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

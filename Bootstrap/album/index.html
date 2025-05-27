@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+                Add some information about the album below, the author, or any
+                other background context. Make it a few sentences long so folks
+                can pick up some informative tidbits. Then, link them off to
+                some social networking sites or contact information.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>Album</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Algunos personajes de Dragon Ball Z</h1>
+            <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/goku.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                <title>Goku</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                   Goku
+                </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Goku es el protagonista principal de la saga de Dragon Ball. Es un guerrero Saiyajin de corazón puro, conocido por su increíble fuerza y su naturaleza bondadosa. Siempre está buscando formas de mejorar y desafiar a los oponentes más fuertes. A lo largo de la serie, se le ve como un luchador incansable y una figura central en la defensa del universo. Su apariencia característica incluye un cabello negro en su forma base, que se vuelve de color dorado cuando alcanza la transformación Super Saiyajin. Tiene una personalidad optimista y despreocupada, pero también es muy determinado y valiente.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/vegeta.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Vegeta</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Vegeta
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Vegeta es el príncipe de los Saiyajins y uno de los personajes más complejos de la serie. Inicialmente es un antagonista arrogante y egocéntrico, pero con el tiempo se convierte en uno de los héroes más poderosos. Su principal motivación es superar a Goku y convertirse en el guerrero más fuerte del universo, lo que lo lleva a tener una relación de competencia constante con él. Vegeta tiene un carácter serio, orgulloso y feroz, pero a lo largo de la serie demuestra un lado más humano, especialmente como padre y esposo. Su cabello es negro y lleva una armadura Saiyajin en muchas de sus apariciones.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/frezer.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Freezer</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Freezer
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Freezer es uno de los villanos más emblemáticos y temibles de la serie Dragon Ball. Es un emperador del universo conocido por su crueldad, poder y despiadada naturaleza. Con una apariencia alienígena y una estructura corporal única, Freezer tiene una forma esquelética y una piel de color blanco y morado. Su personalidad es fría, calculadora y extremadamente egoísta, disfrutando del sufrimiento de los demás y de la destrucción que causa. A lo largo de la serie, se le presenta como uno de los seres más poderosos y temidos, capaz de destruir planetas con facilidad. Su confrontación con Goku en el planeta Namek es uno de los momentos más icónicos de la saga.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/piccolo.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Piccolo</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Piccolo
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Piccolo es un guerrero Namekiano que inicialmente es un enemigo de Goku, pero luego se convierte en uno de sus aliados más cercanos y mentor de su hijo, Gohan. Su aspecto distintivo incluye una piel verde, orejas puntiagudas y una armadura que cubre sus hombros. Es un estratega brillante, muy sabio y, aunque en sus primeros días era un personaje serio y solitario, a lo largo de la saga se convierte en uno de los héroes más importantes y querido por los fanáticos, mostrando un gran sentido de sacrificio y lealtad.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/gohan.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Gohan</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Gohan
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Gohan, el hijo de Goku y Chi-Chi, es un niño con un inmenso potencial de poder, pero a menudo se muestra más interesado en el estudio que en la lucha. Es dulce, inteligente y amable, aunque también tiene una gran valentía cuando la situación lo requiere. Su cabello es oscuro y su actitud es más tranquila en comparación con su padre. Aunque en sus primeros años se muestra reacio a luchar, Gohan demuestra ser uno de los guerreros más poderosos de la saga, especialmente cuando se enfrenta a enemigos como Cell. Su crecimiento personal y su lucha por equilibrar su vida como niño y guerrero es uno de los puntos más importantes de su personaje.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/trunks.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Trunks
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Trunks, el hijo de Vegeta y Bulma, es un niño extremadamente inteligente y valiente. Tiene un gran respeto por su padre, pero también un fuerte sentido de justicia y bondad. A pesar de ser joven, Trunks demuestra gran habilidad en combate y es capaz de realizar hazañas impresionantes en su niñez, como enfrentarse a los androides y luchar junto a los demás Z Fighters. Su cabello es de color lavanda y, aunque al principio es un niño tímido, va ganando confianza a medida que avanza la historia. Trunks es conocido por su valentía y sus habilidades de lucha heredadas de su padre.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/cell.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Cell
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Cell es uno de los villanos más complejos y poderosos de Dragon Ball Z. Es un bioandroide creado por el Dr. Gero, un científico de la Red Ribbon, a partir de las células de varios luchadores poderosos, como Goku, Vegeta, Piccolo y Freezer. Debido a su composición genética, Cell posee una enorme variedad de habilidades, incluyendo la capacidad de absorber a otros seres vivos y transformarse en formas más poderosas. Su apariencia es la de un ser insectoide, con una estructura corporal similar a la de un insecto gigante, de color verde y negro, con manchas amarillas en su cuerpo.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/Buu.jpg" 
+                  alt="Descripción de la imagen" 
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Magin Buu
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    Majin Buu es uno de los villanos más poderosos y complejos de la serie Dragon Ball. Originalmente un ser malévolo y destructivo, su forma de energía maligna lo convierte en una amenaza para todo el universo. A lo largo de la saga, Buu tiene varias transformaciones, cada una más poderosa y peligrosa que la anterior. Su forma inicial es una criatura rosada con una apariencia infantil, pero también tiene un lado más aterrador cuando se transforma en versiones más destructivas. A pesar de su naturaleza destructiva, Majin Buu tiene un lado más tierno y vulnerable en algunas de sus formas, lo que lo hace uno de los villanos más interesantes y multifacéticos de la serie.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img 
+                  class="bd-placeholder-img card-img-top"
+                  src="imagenes/bills.jpg" 
+                  alt="Descripción de la imagen"  
+                  width="100%" 
+                  height="225"
+                />
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Bills
+                  </text>
+                </svg>
+
+                <div class="card-body">
+                  <p class="card-text">
+                    en la versión original japonesa): Bills es el Dios de la Destrucción del Universo 7 en Dragon Ball Super. Es una de las deidades más poderosas en el multiverso de Dragon Ball, con la capacidad de destruir planetas y hasta galaxias enteras con un solo gesto. Su apariencia es la de un gato antropomórfico, con una piel morada y unos ojos amarillos penetrantes. A menudo se le ve con una vestimenta tradicional egipcia y lleva una pequeña esfera de destrucción que le permite canalizar su poder.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        View
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">
+          Album example is &copy; Bootstrap, but please download and customize
+          it for yourself!
+        </p>
+        <p class="mb-0">
+          New to Bootstrap? <a href="/">Visit the homepage</a> or read our
+          <a href="../getting-started/introduction/">getting started guide</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

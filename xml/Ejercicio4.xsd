@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición de elementos globales -->
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="apellido" type="xs:string" />
+    <xs:element name="fechaNacimiento" type="xs:date" />
+    <xs:element name="salario" type="xs:decimal" />
+    <xs:element name="activo" type="xs:boolean" />
+    <xs:element name="horaEntrada" type="xs:time" />
+
+    <!-- Definición del elemento raíz 'empresa' -->
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nombre" />
+                            <xs:element ref="apellido" />
+                            <xs:element ref="fechaNacimiento" />
+                            <xs:element ref="salario" />
+                            <xs:element ref="activo" />
+                            <xs:element ref="horaEntrada" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:int" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="nombreEmpresa" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

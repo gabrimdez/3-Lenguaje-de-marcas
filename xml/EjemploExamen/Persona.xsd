@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://ejemplo.org/persona"
+    xmlns="http://ejemplo.org/persona"
+    xmlns:dir="http://ejemplo.org/direccion"
+    elementFormDefault="qualified">
+
+    <!-- Importamos el esquema de direccion -->
+    <xs:import namespace="http://ejemplo.org/direccion" schemaLocation="Direccion.xsd" />
+
+    <!-- Definimos el elemento persona -->
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="edad" type="xs:integer" />
+                <xs:element name="direccion" type="dir:Direccion" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

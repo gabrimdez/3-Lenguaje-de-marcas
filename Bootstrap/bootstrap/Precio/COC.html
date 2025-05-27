@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clash of Clans - Pases</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("ClashOfClans.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: black;
+      }
+      .container {
+        max-width: 960px;
+      }
+      .pricing-header {
+        max-width: 700px;
+      }
+      .card-header.bg-evento {
+        background-color: #5bc0de; /* azul claro para coincidir con el botón */
+        color: white;
+      }
+      .card-header.bg-temporada {
+        background-color: #f0ad4e; /* amarillo para coincidir con el botón */
+        color: white;
+      }
+      .card-header.bg-pro {
+        background-color: #d9534f;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-3">
+      <header class="text-center mb-4">
+        <h1 class="display-4 fw-bold">Pases de Clash of Clans</h1>
+      </header>
+
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3 bg-evento">
+                <h4 class="my-0 fw-normal">Pase de batalla de la WWE</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">4,99€</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    Pase de batalla especial del evento WrestleMania 41 con
+                    héroes tematizados como superestrellas de la WWE y
+                    recompensas únicas por tiempo limitado.
+                  </li>
+                </ul>
+                <!-- w-100 => ancho 100% del contenedor
+                    btn => estilo base de botón
+                    btn-lg => botón grande
+                    btn-info => color azul claro
+                    text-white => texto de color blanco 
+                -->
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-info text-white"
+                >
+                  ¡Lo quiero!
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3 bg-temporada">
+                <h4 class="my-0 fw-normal">Pase de Oro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">7,99€</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    El pase de batalla clásico de Clash of Clans con recompensas
+                    como libros, runas, potenciadores y skins exclusivas.
+                  </li>
+                </ul>
+                <!--  w-100 => ancho completo del contenedor
+                      btn => clase base de botones
+                      btn-lg => botón de tamaño grande
+                      btn-info => color amarillo
+                      text-white => texto blanco para mejor contraste 
+                -->
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-warning text-white"
+                >
+                  ¡Quiero este!
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-danger">
+              <div class="card-header py-3 bg-pro">
+                <h4 class="my-0 fw-normal">Pro Pass</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">14,99€</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Todos los beneficios del pase de oro</li>
+                  <li>2 aspectos de héroe</li>
+                  <li>1000 gemas extra</li>
+                </ul>
+                <!-- w-100 => el botón se expande al 100% del ancho disponible
+                    btn => clase base para todos los botones Bootstrap
+                    btn-lg => tamaño grande
+                    btn-danger => estilo "peligro", color rojo 
+                -->
+                <button type="button" class="w-100 btn btn-lg btn-danger">
+                  ¡Soy pro!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:doc="http://ejemplo.org/documento"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    targetNamespace="http://ejemplo.org/documento"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <!-- Importa el esquema XHTML para el contenido HTML -->
+    <xs:import namespace="http://www.w3.org/1999/xhtml"
+        schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd" />
+
+    <!-- Definición del elemento raíz -->
+    <xs:element name="document">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string" />
+                <xs:element name="content">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Aquí se referencia el espacio de nombres HTML -->
+                            <xs:element ref="html:html" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="author" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
