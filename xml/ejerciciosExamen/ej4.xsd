@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="empleado" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="nombreEmpresa" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="empleado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre" />
+                <xs:element ref="apellido" />
+                <xs:element ref="fechaNacimiento" />
+                <xs:element ref="salario" />
+                <xs:element ref="activo" />
+                <xs:element ref="horaEntrada" />
+            </xs:sequence>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- empresa -->
+    <xs:attribute name="nombreEmpresa">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="12" />
+                <xs:minLength value="4" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <!-- empleado -->
+    <xs:element name="nombre">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="12" />
+                <xs:minLength value="1" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="apellido">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:maxLength value="20" />
+                <xs:minLength value="1" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="fechaNacimiento" type="xs:date" />
+
+    <xs:element name="salario">
+        <xs:simpleType>
+            <xs:restriction base="xs:double">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="activo" type="xs:boolean" />
+
+    <xs:element name="horaEntrada">
+        <xs:simpleType>
+            <xs:restriction base="xs:string"> 
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:attribute name="id">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+</xs:schema>

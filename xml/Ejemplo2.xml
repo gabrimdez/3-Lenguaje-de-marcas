@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Ejemplo2.xsd">
+    xsi:noNamespaceSchemaLocation="ejemplo2.xsd">
+
     <titulo>Pollo al ajillo</titulo>
-    <ingredientes>Pechugas de pollo</ingredientes>
+    <ingredientes>Pechugas de Pollo</ingredientes>
     <ingredientes>Ajos</ingredientes>
     <ingredientes>Pimienta</ingredientes>
     <ingredientes>Sal</ingredientes>
     <procedimiento>Sellamos el pollo</procedimiento>
-    <procedimiento>Sofreímos el ajo</procedimiento>
+    <procedimiento>Sofries el ajo</procedimiento>
     <procedimiento>Condimentamos con sal y pimienta</procedimiento>
     <procedimiento>Añadimos el pollo</procedimiento>
+
+
 </receta>

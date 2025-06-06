@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Ejercicio2A.xsd">
+    <empleado id="1001">
+        <nombre>Lucía</nombre>
+        <apellido>Martínez</apellido>
+        <puesto>Desarrolladora</puesto>
+        <contacto>
+            <email>lucia.martinez@empresa.com</email>
+            <telefono>600123456</telefono>
+        </contacto>
+        <proyectos>
+            <proyecto id="P-001">
+                <nombre>Sistema Inventario</nombre>
+                <fechaInicio>2024-01-15</fechaInicio>
+                <estado>En curso</estado>
+            </proyecto>
+        </proyectos>
+        <notificaciones>
+            <email>
+                <destinatario>lucia.martinez@empresa.com</destinatario>
+                <asunto>Nuevo Proyecto Asignado</asunto>
+                <mensaje>Has sido asignada al proyecto Sistema de Inventario.</mensaje>
+            </email>
+        </notificaciones>
+    </empleado>
+
+    <empleado id="1002">
+        <nombre>David</nombre>
+        <apellido>Gómez</apellido>
+        <puesto>Analista</puesto>
+        <contacto>
+            <email>david.gomez@empresa.com</email>
+            <telefono>600654321</telefono>
+        </contacto>
+        <proyectos>
+            <proyecto id="P-002">
+                <nombre>Portal Web</nombre>
+                <fechaInicio>2023-09-01</fechaInicio>
+                <estado>Finalizado</estado>
+            </proyecto>
+            <proyecto id="P-003">
+                <nombre>Aplicación Móvil</nombre>
+                <fechaInicio>2024-03-10</fechaInicio>
+                <estado>Planificado</estado>
+            </proyecto>
+        </proyectos>
+        <notificaciones>
+            <sms>
+                <numero>600654321</numero>
+                <mensaje>Reunión de proyecto mañana a las 10:00.</mensaje>
+            </sms>
+        </notificaciones>
+    </empleado>
+
+    <proyecto id="P-004">
+        <nombre>Intranet Corporativa</nombre>
+        <fechaInicio>2025-02-01</fechaInicio>
+        <estado>En análisis</estado>
+        <responsable>
+            <nombre>Lucía</nombre>
+            <apellido>Martínez</apellido>
+        </responsable>
+    </proyecto>
+</empresa>

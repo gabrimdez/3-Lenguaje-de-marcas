@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ejercicio16.xsd"?>
+<informe>
+
+
+    <Editorial>Ediciones Aranda</Editorial>
+    <tipo>Informe regional de ventas</tipo>
+    <descripcion>Descripción: informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+    <fecha>Fecha del informe: 30/12/2009</fecha>
+    <InformeRegionalVentas>
+        <Titulo>Ediciones Aranda - Informe regional del ventas</Titulo>
+        <Descripcion>Informe de ventas para las regiones Norte, Centro y Sur</Descripcion>
+        <FechaDelInforme>2009-12-30</FechaDelInforme>
+        <Regiones>
+            <Region nombre="Norte">
+                <Trimestre numero="1">24000</Trimestre>
+                <Trimestre numero="2">38600</Trimestre>
+                <Trimestre numero="3">NO_INFO</Trimestre>
+                <Trimestre numero="4">NO_INFO</Trimestre>
+            </Region>
+            <Region nombre="Centro">
+                <Trimestre numero="1">NO_INFO</Trimestre>
+                <Trimestre numero="2">16080</Trimestre>
+                <Trimestre numero="3">25000</Trimestre>
+                <Trimestre numero="4">29000</Trimestre>
+            </Region>
+            <Region nombre="Sur">
+                <Trimestre numero="1">27000</Trimestre>
+                <Trimestre numero="2">31400</Trimestre>
+                <Trimestre numero="3">40100</Trimestre>
+                <Trimestre numero="4">30000</Trimestre>
+            </Region>
+        </Regiones>
+    </InformeRegionalVentas>
+
+</informe>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE lista_personas SYSTEM "Ejemplo4.dtd">
+<!DOCTYPE lista_personas SYSTEM "ejemplo4.dtd">
 <lista_personas>
-    <persona>
+    <personas>
         <nombre>Antonio</nombre>
-        <fecha_nacimiento>1980-01-01</fecha_nacimiento>
-        <sexo>Masculino</sexo>
-    </persona>
+        <fecha_nacimiento>27_7_1976</fecha_nacimiento>
+        <sexo>Varon</sexo>
+    </personas>
 </lista_personas>

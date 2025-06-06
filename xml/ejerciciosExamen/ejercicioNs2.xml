@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona xmlns="http://ejemplo.org/persona"
+    xmlns:dir="http://ejemplo.org/direccion"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ejemplo.org/persona persona.xsd
+                        http://ejemplo.org/direccion direccion.xsd">
+    <nombre>Juan</nombre>
+    <edad>30</edad>
+    <dir:direccion>
+        <dir:calle>Gran Vía</dir:calle>
+        <dir:ciudad>Madrid</dir:ciudad>
+        <dir:codigoPostal>28013</dir:codigoPostal>
+    </dir:direccion>
+</persona>
+
+<!-- Resumen
+El XML usa dos espacios de nombres: uno para la persona y otro para la dirección.
+El XSD principal importa el XSD de dirección.
+El XML referencia ambos esquemas en xsi:schemaLocation.
+ -->

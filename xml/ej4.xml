@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <empresa nombreEmpresa="TechCorp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Ejercicio4.xsd">
+    xsi:noNamespaceSchemaLocation="ej4.xsd">
     <empleado id="1">
         <nombre>John</nombre>
         <apellido>Doe</apellido>

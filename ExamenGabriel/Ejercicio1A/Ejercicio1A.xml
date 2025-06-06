@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:per="http://ejemplo.org/persona" 
+    xmlns:lib="http://ejemplo.org/libro">
+    
+    <per:persona id="1">
+        <per:nombre>Juan</per:nombre>
+        <per:apellidos>Pérez Gómez</per:apellidos>  
+        <per:email>juan.perez@example.com</per:email>
+        <per:direccion>
+            <per:calle>Calle Mayor 123</per:calle>
+            <per:ciudad>Madrid</per:ciudad>
+            <per:codigoPostal>28001</per:codigoPostal>
+        </per:direccion>
+    </per:persona>
+    <per:persona id="2">
+        <per:nombre>Ana</per:nombre>
+        <per:apellidos>López Ruiz</per:apellidos>
+        <per:email>ana.lopez@example.com</per:email>
+        <per:direccion>
+            <per:calle>Avenida de la Paz 45</per:calle>
+            <per:ciudad>Barcelona</per:ciudad>
+            <per:codigoPostal>08002</per:codigoPostal>
+        </per:direccion>
+    </per:persona>
+    <lib:libro isbn="978-3-16-148410-0">
+        <lib:titulo>Introducción a XML</lib:titulo>
+        <lib:autor>
+            <per:nombre>Juan</per:nombre>
+            <per:apellidos>Pérez Gómez</per:apellidos>
+        </lib:autor>
+        <lib:editorial>Editorial Ejemplo</lib:editorial>
+        <lib:anio>2022</lib:anio>
+    </lib:libro>
+    <lib:libro isbn="978-1-23-456789-7">
+        <lib:titulo>Avanzado en XML</lib:titulo>
+        <lib:autor>
+            <per:nombre>Ana</per:nombre>
+            <per:apellidos>López Ruiz</per:apellidos>
+        </lib:autor>
+        <lib:editorial>Editorial Avanzada</lib:editorial>
+        <lib:anio>2023</lib:anio>
+    </lib:libro>
+</catalogo>

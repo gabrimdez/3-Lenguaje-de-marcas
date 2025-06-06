@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento raíz (empresa) -->
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="empleado" maxOccurs="unbounded"/>
+        <xs:element ref="proyecto" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Empleado -->
+  <xs:element name="empleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="apellido"/>
+        <xs:element ref="puesto"/>
+        <xs:element ref="contacto"/>
+        <xs:element ref="proyectos" minOccurs="0"/>
+        <xs:element ref="notificaciones" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Proyecto dentro del empleado -->
+  <xs:element name="proyectos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="proyecto" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="nombre"/>
+              <xs:element ref="fechaInicio"/>
+              <xs:element ref="estado"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Proyecto global -->
+  <xs:element name="proyecto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="fechaInicio"/>
+        <xs:element ref="estado"/>
+        <xs:element name="responsable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="nombre"/>
+              <xs:element ref="apellido"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute ref="id" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Contacto -->
+  <xs:element name="contacto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="telefono" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Notificaciones -->
+  <xs:element name="notificaciones">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="email">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="destinatario" type="xs:string"/>
+              <xs:element name="asunto" type="xs:string"/>
+              <xs:element name="mensaje" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sms"> 
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero" type="xs:string"/>
+              <xs:element name="mensaje" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Elementos reutilizables (nombre, apellidos)-->
+  <xs:element name="nombre">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="20"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="apellido">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+        <xs:maxLength value="30"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="puesto" type="xs:string"/>
+  <xs:element name="fechaInicio" type="xs:date"/>
+  <xs:element name="estado" type="xs:string"/>
+
+  <!-- ID -->
+  <xs:attribute name="id">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Za-z0-9\-]+"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+
+</xs:schema>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="Ejercicio3.xsd">
+    xsi:noNamespaceSchemaLocation="ej3.xsd">
+
     <producto>
         <nombre>Teléfono móvil</nombre>
         <precio>299.99</precio>
@@ -11,4 +12,6 @@
         <precio>899.99</precio>
         <cantidad>5</cantidad>
     </producto>
+
+
 </tienda>
